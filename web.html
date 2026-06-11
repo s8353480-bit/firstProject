@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nishant Kumar | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00f2fe;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #4facfe;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0077ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nishant Kumar</h1>
+    <p>Web Developer | Student | Tech Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Hello! I am Nishant Kumar. I am passionate about web development and technology. I love building creative and responsive websites.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>My Skills</h2>
+        <p>✔ HTML</p>
+        <p>✔ CSS</p>
+        <p>✔ JavaScript</p>
+        <p>✔ Python</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Me</h2>
+        <p>Email: nishant@example.com</p>
+        <button onclick="showMessage()">Say Hello</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Nishant Kumar | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Thank you for visiting Nishant Kumar's website!");
+    }
+</script>
+
+</body>
+</html>

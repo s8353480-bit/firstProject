@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int x=10;
+void display(){
+    int x=20;
+    cout<<"displaying local:"<<x<<endl;
+    cout<<"displaying local:"<<::x<<endl;
+}
+int main(){
+    int x=50;
+    cout<<"main function local x"<<x<<endl;
+    cout<<"global x:"<<xMMendl;
+    int y=(x=40,x+10);
+    cout<<"after using comma operator,x:"<<x<<"y:"<<y<<endl;
+    display();
+    return 0;
+}
