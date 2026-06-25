@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(pink, lightblue);
+}
+
+.love-scene{
+    position:relative;
+    width:700px;
+    height:350px;
+}
+
+.boy, .girl{
+    width:220px;
+    height:300px;
+    object-fit:cover;
+    position:absolute;
+    top:25px;
+    transition:all 2s ease;
+}
+
+.boy{
+    left:0;
+}
+
+.girl{
+    right:0;
+}
+
+.heart{
+    position:absolute;
+    left:50%;
+    top:45%;
+    transform:translate(-50%,-50%);
+    font-size:60px;
+    opacity:0;
+    transition:all 1s ease;
+}
+
+/* Hover Effect */
+.love-scene:hover .boy{
+    left:220px;
+}
+
+.love-scene:hover .girl{
+    right:220px;
+}
+
+.love-scene:hover .heart{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1.5);
+}

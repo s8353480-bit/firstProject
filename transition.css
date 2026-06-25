@@ -1,0 +1,72 @@
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 7;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+
+    /* margin-top: 200px;
+    margin-left: 400px; */
+    /* transform: translateY(-200px); */
+    /* transform: scaleY(2); */
+    /* transform: rotateY(60deg); */
+    /* transform: skewY(45deg); */
+    /* transform: matrix(1,0,0,1,200,200); */
+
+    /* transition-property: border-radius;
+    transition-duration: 10s;
+    transition-delay: 2s;
+    transition-timing-function: linear; */
+    /* transition: border-radius 10s ease 3s; */
+}
+
+
+/* .container:hover{
+    background-color: green;
+    margin-left: 400px;
+    border-radius: 30px;
+} */
+
+/* #cont:hover{
+    transform: rotateZ(45deg);
+    transform: scale(2);
+    transform:perspective(500px) translateZ(200px);
+} */
+
+
+@keyframes move{
+    /* from{
+       top: 0;
+       left: 0;
+    }
+    to{
+       top: 0;
+       left: 400px;
+    } */
+     0%{
+      left: 0;
+      top: 0;
+     }
+     25%{
+      top: 0;
+      left: 800px;
+     }
+     50%{
+     left: 800px;
+     top: 400px;
+     }
+     75%{
+     left: 0;
+     top: 400px;
+     }
+     100%{
+     left: 0;
+     top: 0;
+     }
+}

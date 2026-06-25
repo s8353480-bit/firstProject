@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f0f0f0;
+}
+
+.container{
+    position:relative;
+    width:600px;
+    height:350px;
+}
+
+.boy,.girl{
+    width:200px;
+    height:300px;
+    position:absolute;
+    transition:all 1.5s ease;
+}
+
+.boy{
+    left:0;
+}
+
+.girl{
+    right:0;
+}
+
+/* Hover par dono paas aa jayenge */
+.container:hover .boy{
+    left:180px;
+}
+
+.container:hover .girl{
+    right:180px;
+}

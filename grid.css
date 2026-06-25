@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap:10px;
+    padding:10px;
+}
+
+.heading{
+    background:skyblue;
+    padding:20px;
+    text-align:center;
+    grid-column:1/4;
+}
+
+.sidebar{
+    background:lightgreen;
+    padding:20px;
+    text-align:center;
+    grid-row:2/4;
+}
+
+.sec1{
+    background:lightcoral;
+    padding:20px;
+    text-align:center;
+}
+
+.sec2{
+    background:khaki;
+    padding:20px;
+    text-align:center;
+}
+
+.sec3{
+    background:plum;
+    padding:20px;
+    text-align:center;
+    grid-column:2/4;
+}
+
+.footer{
+    background:gray;
+    color:white;
+    padding:20px;
+    text-align:center;
+    grid-column:1/4;
+}
